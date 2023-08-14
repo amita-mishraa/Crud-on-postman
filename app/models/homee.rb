@@ -1,0 +1,3 @@
+class Homee < ApplicationRecord
+    
+end
