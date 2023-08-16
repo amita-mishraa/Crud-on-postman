@@ -6,7 +6,5 @@ Rails.application.routes.draw do
     root "home#index"
     get '/homes/:id', to:'home#show'
   #  post 'home/create' 
-  resources :home do
-    get 'create' , on: :member, action: 'create'
-  end
+  post '/home', to: 'homes#create'
 end
